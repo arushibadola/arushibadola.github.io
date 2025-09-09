@@ -113,13 +113,11 @@ footer {
 }
 
 .about-image img {
-  border-radius: 0 !important;
-}
-
   width: 250px;      /* Adjust this value for bigger/smaller photo */
   max-width: 100%;   /* Keeps it responsive on small screens */
   height: auto;
   object-fit: cover;
+  border-radius: 0 !important;
 }
 
 @media (max-width: 768px) {
