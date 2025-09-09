@@ -208,5 +208,17 @@ footer {
     max-width: 220px;
     margin-top: 12px;
   }
+  /* --- Force the Contact buttons to center --- */
+#contact {
+  text-align: center;             /* center inline content */
+}
+
+#contact .contact-buttons {
+  display: flex;                  /* row of buttons */
+  justify-content: center;        /* center them horizontally */
+  align-items: center;
+  gap: 20px;                      /* space between buttons */
+  width: max-content;             /* container shrinks to its content */
+  margin: 20px auto 0;            /* centers the container block */
 }
 
