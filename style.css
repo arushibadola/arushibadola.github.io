@@ -58,18 +58,31 @@ section h2 {
 .project a:hover { text-decoration: underline; }
 
 /* Skills */
-.skills-list {
-  list-style: none;
-  padding: 0;
+.skills-tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
-.skills-list li {
-  background: #eaeaea;
-  margin: 0.5rem;
-  padding: 0.7rem 1.2rem;
+
+.skills-tags h3 {
+  width: 100%;       /* forces category headers to take full row */
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.skills-tags span {
+  background: #f1f1f1;
+  padding: 6px 12px;
   border-radius: 20px;
+  font-size: 0.9rem;
+  color: #444;
+  transition: background 0.2s;
+}
+
+.skills-tags span:hover {
+  background: #e0e0e0;
 }
 
 /* Footer */
