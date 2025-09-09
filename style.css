@@ -112,14 +112,14 @@ section h2 {
 }
 .contact-buttons {
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 15px;
+  justify-content: center;   /* centers the buttons */
+  gap: 20px;                 /* adds spacing between them */
+  margin-top: 20px;
 }
 
 .contact-buttons .btn {
   display: inline-block;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background-color: #0077b5;   /* LinkedIn blue */
   color: white;
   text-decoration: none;
