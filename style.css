@@ -113,7 +113,7 @@ footer {
 }
 
 .about-image img {
-  width: 400px;      /* Adjust this value for bigger/smaller photo */
+  width: 300px;      /* Adjust this value for bigger/smaller photo */
   max-width: 100%;   /* Keeps it responsive on small screens */
   height: auto;
   object-fit: cover;
