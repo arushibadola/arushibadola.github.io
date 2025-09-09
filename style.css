@@ -112,22 +112,27 @@ section h2 {
 }
 .contact-buttons {
   display: flex;
-  justify-content: center;   /* centers the buttons */
-  gap: 20px;                 /* adds spacing between them */
-  margin-top: 20px;
-}
-
-.contact-buttons {
-  display: flex;
-  justify-content: center;   /* center the buttons horizontally */
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* aligns vertically if needed */
   gap: 20px;                 /* spacing between buttons */
   margin-top: 20px;
-  text-align: center;        /* ensures text aligns center too */
-  width: 100%;               /* container takes full width */
+  width: 100%;               /* container spans full width */
+}
+
+.contact-buttons .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #0077b5; /* LinkedIn blue (default) */
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .contact-buttons .btn:first-child {
-  background-color: #444;  /* neutral dark for email */
+  background-color: #444;    /* neutral dark for email */
 }
 
 .contact-buttons .btn:hover {
