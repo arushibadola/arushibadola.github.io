@@ -110,35 +110,34 @@ section h2 {
 .skills-tags span:hover {
   background: #e0e0e0;
 }
-.contact-buttons {
-  display: flex;
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* aligns vertically if needed */
-  gap: 20px;                 /* spacing between buttons */
-  margin-top: 20px;
-  width: 100%;               /* container spans full width */
+/* Center everything in the contact section */
+#contact { 
+  text-align: center; 
 }
 
-.contact-buttons .btn {
+/* Shrink the button group to its content and center it */
+.contact-buttons{
+  display: inline-flex;      /* container is only as wide as the buttons */
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button styling */
+.contact-buttons .btn{
   display: inline-block;
   padding: 12px 20px;
-  background-color: #0077b5; /* LinkedIn blue (default) */
-  color: white;
+  background: #0077b5;       /* LinkedIn blue for default */
+  color: #fff;
   text-decoration: none;
-  font-size: 1rem;
   font-weight: 500;
   border-radius: 6px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: transform .2s ease, opacity .2s ease;
 }
+.contact-buttons .btn:first-child{ background:#444; } /* Email */
+.contact-buttons .btn:hover{ transform: translateY(-2px); opacity:.9; }
 
-.contact-buttons .btn:first-child {
-  background-color: #444;    /* neutral dark for email */
-}
-
-.contact-buttons .btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
 
 /* Footer */
 footer {
