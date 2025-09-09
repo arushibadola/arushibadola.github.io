@@ -116,7 +116,6 @@ footer {
   width: 250px;      /* Adjust this value for bigger/smaller photo */
   max-width: 100%;   /* Keeps it responsive on small screens */
   height: auto;
-  border-radius: 50%; /* Makes the photo circular—remove for square */
   object-fit: cover;
 }
 
