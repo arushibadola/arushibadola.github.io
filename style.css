@@ -229,4 +229,44 @@ footer {
   width: max-content;             /* container shrinks to its content */
   margin: 20px auto 0;            /* centers the container block */
 }
+/* CURRENT WORK */
+#current {
+  padding: 2rem 1rem;
+  max-width: 1000px;   /* wider to breathe */
+  margin: 2rem auto;
+}
 
+.current-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.current-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1.2rem;
+}
+
+.current-card h3 {
+  text-align: center;
+  margin: 0 0 0.8rem 0;
+  color: #333;
+}
+
+.current-card ul {
+  margin: 0;
+  padding-left: 1.1rem; /* neat bullet indent */
+  line-height: 1.5;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .current-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .current-grid { grid-template-columns: 1fr; }
+}
